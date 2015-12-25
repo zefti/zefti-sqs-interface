@@ -1,0 +1,10 @@
+{
+  "name" : "zefti-sqs-interface",
+  "description" : "Zefti SQS Interface",
+  "author" : "Ryan Ogle",
+  "dependencies" : {
+    "underscore" : "latest"
+  },
+  "private" : false,
+  "version" : "0.0.1"
+}
