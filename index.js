@@ -1,7 +1,4 @@
 var utils = require('zefti-utils');
-var common = require('zefti-common');
-var uuid = require('node-uuid');
-var randtoken = require('rand-token');
 var settings =require('zefti-config').currentSettings;
 
 
@@ -36,7 +33,7 @@ function createItem(hash){
 }
 
 Sqs.prototype.create = function(hash, options, cb){
-  var intArgs = common.process3DbArguments(arguments);
+  var intArgs = utils.resolve3Arguments(arguments);
   var stringifiedMessageBody = JSON.stringify(hash);
   //if (!hash.messageBody) return cb('messageBody is required', null);
   var params = {
